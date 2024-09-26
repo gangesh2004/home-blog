@@ -1,0 +1,90 @@
+
+.profile-page{
+  min-height: 80vh;
+}
+.profile-page p{
+  font-size: large;
+  font-weight: 600;
+  color: rgb(91, 89, 89);
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.profile-page-container{
+  margin:2% 10% 0% 10%;
+  /* max-width: 800px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(224, 207, 207);
+  border-radius: 2%;
+}
+
+.profile-page-container .profile-section{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.profile-page-container .avatar img{
+  margin: 1em 1em 1em 1em;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.profile-page-container .profile-section .profile-details{
+  margin-left: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.profile-page-container .profile-section .profile-details .form-details{
+ margin-top: 1em;
+ padding: 2px 2px;
+}
+.profile-page-container .profile-section .profile-details input{
+ /* margin-top: 1em; */
+ padding: 1rem 1rem;
+ 
+ margin-right: 4%;
+}
+.profile-page-container .blog-statistics{
+ display: flex;
+ flex-direction: row;
+ margin-bottom: 2rem;
+ justify-content: space-between;
+}
+.profile-page-container .blog-statistics .blog-count{
+  margin-left: 1rem;
+  
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ /* border: 2px solid rgb(142, 137, 137); */
+ box-shadow: 2px 2px lightblue;
+
+}
+.profile-page-container .blog-statistics .blog-count p{
+  padding-left: 0.8em ;
+  padding-right: 0.8em ;
+
+}
+
+@media (max-width:750px) {
+  .profile-page-container{
+    flex-direction: column;
+  }
+
+  .profile-page-container .profile-section{
+    flex-direction: column;
+  }
+  .profile-page-container .blog-statistics{
+    flex-direction: column;
+  }
+}
+
+
+
+

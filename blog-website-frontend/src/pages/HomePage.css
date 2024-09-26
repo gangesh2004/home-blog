@@ -1,0 +1,208 @@
+.title-introducer {
+  text-align: center;
+  background-image: url('../assets/heroImage.jpg');
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title-introducer .hero-text{
+  width: 50%;
+}
+
+
+.title-introducer h4 {
+  font-size: 3rem; /* Adjusted for better responsiveness */
+  font-weight: 600; /* Slightly lighter weight for a more elegant look */
+  /* color: #000000;  */
+  margin: 0; /* Removed margins to control spacing precisely */
+  padding: 0.5rem 0; /* Padding for spacing around the text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title-introducer img{
+  width: 100%;
+  /* width: auto; */
+  height: auto;
+  max-height: 80vh;
+ 
+}
+.btn-blog{
+ font-style: italic;
+ font-size: medium;
+ font-weight: 300;
+ margin-top: 3px;
+ margin-bottom: 8px;
+ padding: 8px 15px;
+ border-radius: 8px;
+ background-color: #4015ff;
+ color: white;
+ border: 2px solid blue;
+ cursor: pointer;
+ 
+}
+
+
+.title-introducer p {
+  font-size: 1.8rem; /* Adjusted for better readability */
+  color: #333; /* Darker color for better contrast */
+  font-weight: 300; /* Light font weight for a softer look */
+  font-style: italic;
+  margin: 0; /* Removed margins to control spacing precisely */
+  padding: 0.5rem 0; /* Padding for spacing around the text */
+}
+
+.about-blogger {
+  text-align: center;
+  padding: 1rem 2rem; /* Added padding for spacing */
+  font-size: 1.2rem; /* Adjusted font size for readability */
+  font-weight: 400;
+  color: #1b1b1b; /* Lighter color for a softer appearance */
+  border-top: 1px solid #e0e0e0; /* Soft border to separate sections */
+  border-bottom: 1px solid #e0e0e0; /* Added bottom border for separation */
+  margin-top: 10px;
+  margin-bottom: 2rem; /* Space below the section */
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+.about-blogger h4{
+  text-align: left;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.about-blogger p{
+  font-style: italic;
+}
+
+
+.feature-p{
+  font-weight: 500;
+  font-size: large;
+  color: #333;
+}
+
+
+.upload-your-blog-section {
+  margin-top: 4px;
+  padding: 20px; /* Padding around the section */
+  background-color: #f9f9f9; /* Light background color */
+  margin-bottom: 4px;
+}
+
+.upload-your-blog-section h4 {
+  text-align: left;
+  font-weight: 700; /* Bold and strong heading */
+  font-size: 2.5rem; /* Large, impactful font size */
+  margin: 0 0 10px 0; /* Simplified margin: top=0, bottom=10px */
+  color: #333; /* Dark color for readability */
+}
+
+.upload-your-blog-section p {
+  font-style: italic;
+  font-size: 1.125rem; /* Specific rem size for consistency */
+  margin-top: 0; /* Ensure no margin at the top */
+  margin-bottom: 10px; /* Consistent spacing below paragraph */
+  color: #555; /* Softer color for emphasis */
+}
+
+
+.testimonials {
+  display: flex;
+  justify-content: space-between; /* Space between cards */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 10px; /* Use gap for consistent spacing between cards */
+  padding: 20px; /* Add padding for better spacing */
+  background-color: #f7f7f7; /* Light background for contrast */
+}
+
+.testimonials h4{
+  text-align: left;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.testimonials .cards{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.testimonials .card{
+  border: 2px solid #ffffff; /* Consistent color coding */
+  margin: 2px 5px; /* Margins for spacing */
+  padding: 15px; /* Padding inside the card */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+  border-radius: 8px;
+  background-color: #ffffff; /* Background for contrast */
+}
+
+.testimonials .card .quotes {
+  font-style: italic;
+  color: #555; /* Softer color for quotes */
+  margin-bottom: 10px; /* Spacing from writer */
+}
+
+.testimonials .card .writer {
+  font-weight: 600;
+  color: #333; /* Stronger color for emphasis */
+  margin-top: 10px; /* Spacing above writer */
+}
+
+
+
+@media (max-width: 1200px) {
+  .title-introducer h4 {
+    font-size: 2.5rem;
+  }
+
+  .title-introducer p {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .title-introducer h4 {
+    font-size: 2rem;
+  }
+
+  .title-introducer p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-introducer h4 {
+    font-size: 2.5rem;
+  }
+
+  .title-introducer p {
+    font-size: 1.2rem;
+  }
+  .testimonials .cards{
+    flex-direction: column;
+  }
+  
+}
+
+.blog-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd; /* Light border for card separation */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for card depth */
+  overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.blog-card .MuiCardContent-root {
+  flex-grow: 1;
+  padding: 1rem; /* Add padding inside card content */
+}
+
+.blog-card img {
+  border-bottom: 1px solid #ddd; /* Border below image for separation */
+}
